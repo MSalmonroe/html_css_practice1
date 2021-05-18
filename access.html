@@ -1,0 +1,77 @@
+# html_css_practice1
+SBクリエイティブ出版「1冊ですべて身につくHTML＆CSSとWebデザイン入門講座」サンプルサイト
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample CafeSite</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <div id="access" class="bigimg">
+        <header class="page-header wrapper" >
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="CafeHome"></a>
+            <nav>
+            <ul class="main-nav">
+                <li><a href="news.html">News</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="access.html">Access</a> </li>
+            </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <h2 class="pagetitle">Access</h2>
+            </div>
+    </div>
+    <section class="location">
+        <div class="wrapper">
+            <div class="locationinfo">
+                <h3 class="subtitle">カフェ 東駅前店</h3>
+                <p>
+                    住所：大阪府豊中市<br>
+                    緑丘1丁目32番地18号<br>
+                    グリーンロータス2号<br>
+                    電話：〇〇〇-〇〇〇〇<br>
+                    営業時間：10:00~18:00<br>
+                    休日：木曜日
+                </p>
+            </div>
+            <div class="locationmap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d818.9873705027684!2d135.4771674291846!3d34.80721279877548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000faf00f4f23a1%3A0x3316c3ad0e3b964c!2z44CSNTYwLTAwMDIg5aSn6Ziq5bqc6LGK5Lit5biC57eR5LiY77yR5LiB55uu77yT77yS4oiS77yR77yY!5e0!3m2!1sja!2sjp!4v1621351813977!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <section id="sns">
+        <div class="wrapper">
+            <div class="snsbox">
+                <h3 class="subtitle">Facebook</h3>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=315&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+            </div>
+            <div class="snsbox">
+                <h3 class="subtitle">Twitter</h3>
+                <a class="twitter-timeline" data-height="315" href="https://twitter.com/Twitter?ref_src=twsrc%5Etfw">Tweets by Twitter</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+                </script>
+            </div>
+            <div class="snsbox">
+                <h3 class="subtitle">Youtube</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WJzSBLCaKc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; 2019 Manabox</small></p>
+        </div>
+    </footer>
+</body>
+</html>
