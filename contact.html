@@ -1,0 +1,52 @@
+# html_css_practice1
+SBクリエイティブ出版「1冊ですべて身につくHTML＆CSSとWebデザイン入門講座」サンプルサイト
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample CafeSite</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <div id="contact" class="bigimg">
+        <header class="page-header wrapper" >
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="CafeHome"></a>
+            <nav>
+            <ul class="main-nav">
+                <li><a href="news.html">News</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="access.html">Access</a> </li>
+            </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <h2 class="pagetitle">Contact</h2>
+            <!--formの内容は送信されません-->
+            <form action="#">
+                <div>
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="your-name">
+                </div>
+                <div>
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="your-email">
+                </div>
+                <div>
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="your-message"></textarea>
+                </div>
+                <div class="submit">
+                <input type="submit" class="button" value="送信">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
