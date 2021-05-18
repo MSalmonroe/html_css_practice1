@@ -1,0 +1,347 @@
+# html_css_practice1
+SBクリエイティブ出版「1冊ですべて身につくHTML＆CSSとWebデザイン入門講座」サンプルサイト
+@charset "UTF-8";
+
+/*index.html*/
+html { 
+    font-size: 100%; 
+}
+#home{
+    background-image: url(images/main-bg.jpg);
+    min-height: 100vh;
+}
+#home .pagetitle{
+    text-transform: none;
+}
+.bigimg{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",　"ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+a {
+    text-decoration: none;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.wrapper{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.logo{
+    width: 270px;
+}
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 34px 10px 0px 0px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color: #432;
+}
+.main-nav a:hover{
+    transition: 0.2s;
+    color: #0bd;
+}
+.maincontents{
+    text-align: center;
+    margin-top: 10%;
+}
+.maincontents p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px 0;
+}
+.pagetitle{
+    font-size: 5rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.button{
+    font-size: 1.375rem;
+    background:  #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover{
+    transition: 0.2s;
+    background: #0090aa;
+}
+/*news.html*/
+#news{
+    background-image: url(images/news-bg.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+#news .pagetitle{
+    text-align: center;
+}
+footer{
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color: #fff;
+    font-size: 0.875rem;
+}
+article{
+    width: 74%;
+}
+aside{
+    width: 22%;
+}
+.newscontents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.postinfo{
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+.postdate{
+    background: #0bd;
+    border-radius: 50%;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+.postdate span{
+    font-size: 1rem;
+    border-top: 1px rgba(255, 255, 255, .5) solid;
+    padding-top: 6px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.posttitle{
+    font-family: "Yu Mincho", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.posttitle,
+.postcat{
+    margin-left: 120px;
+}
+article img{
+    margin-bottom: 20px;
+}
+article p{
+    margin-bottom: 1rem;
+}
+.subtitle{
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+aside p{
+    padding: 12px 10px;
+}
+.submenu{
+    margin-bottom: 60px;
+    list-style: none;
+}
+.submenu li{
+    border-bottom: 1px #ddd solid;
+}
+.submenu a{
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+.submenu a:hover{
+    color: #0bd;
+}
+/* MENU */
+#menu{
+    background-image: url(images/menu-bg.jpg) ;
+    min-height: 100vh;
+}
+.menucontent{
+    max-width: 560px;
+    margin-top: 10%;
+}
+.menucontent, .pagetitle{
+    text-align: center;
+}
+.menucontent p{
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+.bigbox{
+    grid-column: 1 / 3;
+    grid-row: 1 /3;
+}
+.bigbox img{
+    height: 95%;
+    width: 100%;
+}
+
+/*Contact*/
+
+#contact{
+    background-image: url(images/contact-bg.jpg);
+    min-height: 100vh;
+}
+#contact .pagetitle{
+    text-align: left;
+}
+form{
+    margin-top: 10%;
+}
+form div{
+    margin-bottom: 14px;
+}
+label{
+    display: block;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    max-width: 240px;
+}
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/*Access*/
+#access{
+    background-image: url(images/news-bg.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+.location{
+    padding: 4%;
+}
+.location .wrapper{
+    display: flex;
+    justify-content:space-between ;
+}
+.locationinfo{
+    width: 22%;
+}
+.locationmap{
+    width: 74%;
+}
+.locationinfo p{
+    padding: 12px 10px;
+}
+iframe{
+    width: 100%;
+}
+#sns{
+    background: #faf7f0;
+    padding: 4%;
+}
+#sns .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#sns .subtitle{
+    margin-bottom: 30px;
+}
+.snsbox{
+    width: 30%;
+}
+/*メディアクエリ*/
+@media (max-width :700px) {
+    .pagetitle{
+        font-size: 2.5rem;
+    }
+    .maincontents,.menucontent{
+        margin-top: 10%;
+    }
+    .main-nav{
+    font-size: 1rem;
+    margin-top: 10px;
+    }
+    .main-nav li{
+        margin: 0 20px;
+    }
+    .maincontents{
+        margin-top: 20px;
+    }
+    .page-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menucontent{
+        margin-top: 20px;
+    }
+    .grid{
+        display: block;
+    }
+    .bigbox img{
+        height: auto;
+    }
+    #contact .pagetitle{
+        text-align: center;
+        margin-top: 40px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        max-width: 100%;
+    }
+    .submit{
+        text-align: center;
+    }
+    .location .wrapper,#sns .wrapper{
+        flex-direction: column;
+    }
+    .locationinfo, .locationmap, .snsbox{
+        width: 100%;
+    }
+}
